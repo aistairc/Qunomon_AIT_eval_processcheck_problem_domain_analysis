@@ -1,0 +1,2 @@
+pandas==2.0.3
+./ait_sdk-0.1.22-py3-none-any.whl
