@@ -90,6 +90,7 @@ if not is_ait_launch:
 
 if not is_ait_launch:
     requirements_generator.add_package('pandas','2.0.3')
+    requirements_generator.add_package('matplotlib','3.7.3')
 
 
 # #### #3-3 [uneditable]
