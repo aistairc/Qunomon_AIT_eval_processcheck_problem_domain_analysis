@@ -89,13 +89,13 @@ if not is_ait_launch:
 
 
 if not is_ait_launch:
-    requirements_generator.add_package('pandas','2.0.3')
+    requirements_generator.add_package('pandas','2.2.3')
     requirements_generator.add_package('matplotlib','3.7.3')
 
 
 # #### #3-3 [uneditable]
 
-# In[5]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -109,7 +109,7 @@ if not is_ait_launch:
 
 # #### #4-1 [required]
 
-# In[6]:
+# In[ ]:
 
 
 import numpy as np
@@ -120,7 +120,7 @@ from matplotlib.gridspec import GridSpec
 
 # #### #4-2 [uneditable]
 
-# In[7]:
+# In[ ]:
 
 
 # must use modules
@@ -135,7 +135,7 @@ from ait_sdk.develop.annotation import measures, resources, downloads, ait_main 
 # must use modules
 
 
-# In[8]:
+# In[ ]:
 
 
 ITEM_CATEGORY='カテゴリ'
@@ -150,7 +150,7 @@ NONE='NONE'
 
 # [required]
 
-# In[9]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -161,7 +161,7 @@ if not is_ait_launch:
      manifest_genenerator.set_ait_description('機械学習品質マネジメントガイドライン第三版に従って、機械学習利用システムに用いるデータセットが問題領域分析の十分性を満たしているかをチェックリスト方式で審査する。'
                                               'チェックリストはhttps://github.com/aistairc/Qunomon_AIT_eval_processcheck_problem_domain_analysisからダウンロードできる。')
      manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_processcheck_problem_domain_analysis')
-     manifest_genenerator.set_ait_version('0.1')
+     manifest_genenerator.set_ait_version('0.2')
      manifest_genenerator.add_ait_keywords('checklist,sufficiency of problem domain')
      manifest_genenerator.set_ait_quality('https://ait-hub.pj.aist.go.jp/ait-hub/api/0.0.1/qualityDimensions/機械学習品質マネジメントガイドライン第三版/A-1問題領域分析の十分性')
      inventory_requirement_checklist = manifest_genenerator.format_ait_inventory_requirement(format_=['csv'])
@@ -194,7 +194,7 @@ if not is_ait_launch:
 
 # [required]
 
-# In[10]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -212,7 +212,7 @@ if not is_ait_launch:
 
 # [uneditable]
 
-# In[11]:
+# In[ ]:
 
 
 logger = get_logger()
@@ -242,7 +242,7 @@ ait_manifest.read_json(path_helper.get_manifest_file_path())
 
 # [required]
 
-# In[12]:
+# In[ ]:
 
 
 # 要求レベルの判定
@@ -288,7 +288,7 @@ def set_RequirementLevel(s_AISL, s_AIPL, s_AIFL):
     return -1
 
 
-# In[13]:
+# In[ ]:
 
 
 # チェックリストのバリデート
@@ -321,7 +321,7 @@ def validate_input(checklist_table_data):
     return returncode
 
 
-# In[14]:
+# In[ ]:
 
 
 # passチェック
@@ -352,7 +352,7 @@ def pass_check(checklist_pickuped):
     return False
 
 
-# In[15]:
+# In[ ]:
 
 
 @log(logger)
@@ -365,7 +365,7 @@ def move_log(file_path: str=None) -> str:
 
 # [required]
 
-# In[16]:
+# In[ ]:
 
 
 @log(logger)
@@ -421,7 +421,7 @@ def main() -> None:
 
 # [uneditable]
 
-# In[17]:
+# In[ ]:
 
 
 if __name__ == '__main__':
@@ -432,7 +432,7 @@ if __name__ == '__main__':
 
 # [required]
 
-# In[18]:
+# In[ ]:
 
 
 ## sample ##
@@ -444,7 +444,7 @@ ait_creation_year='2023'
 
 # [uneditable] 
 
-# In[19]:
+# In[ ]:
 
 
 if not is_ait_launch:
