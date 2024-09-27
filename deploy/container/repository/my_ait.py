@@ -95,7 +95,7 @@ if not is_ait_launch:
 
 # #### #3-3 [uneditable]
 
-# In[ ]:
+# In[5]:
 
 
 if not is_ait_launch:
@@ -109,7 +109,7 @@ if not is_ait_launch:
 
 # #### #4-1 [required]
 
-# In[ ]:
+# In[6]:
 
 
 import numpy as np
@@ -120,7 +120,7 @@ from matplotlib.gridspec import GridSpec
 
 # #### #4-2 [uneditable]
 
-# In[ ]:
+# In[7]:
 
 
 # must use modules
@@ -135,7 +135,7 @@ from ait_sdk.develop.annotation import measures, resources, downloads, ait_main 
 # must use modules
 
 
-# In[ ]:
+# In[8]:
 
 
 ITEM_CATEGORY='カテゴリ'
@@ -150,7 +150,7 @@ NONE='NONE'
 
 # [required]
 
-# In[ ]:
+# In[9]:
 
 
 if not is_ait_launch:
@@ -194,7 +194,7 @@ if not is_ait_launch:
 
 # [required]
 
-# In[ ]:
+# In[10]:
 
 
 if not is_ait_launch:
@@ -212,7 +212,7 @@ if not is_ait_launch:
 
 # [uneditable]
 
-# In[ ]:
+# In[11]:
 
 
 logger = get_logger()
@@ -242,7 +242,7 @@ ait_manifest.read_json(path_helper.get_manifest_file_path())
 
 # [required]
 
-# In[ ]:
+# In[12]:
 
 
 # 要求レベルの判定
@@ -288,7 +288,7 @@ def set_RequirementLevel(s_AISL, s_AIPL, s_AIFL):
     return -1
 
 
-# In[ ]:
+# In[13]:
 
 
 # チェックリストのバリデート
@@ -321,7 +321,7 @@ def validate_input(checklist_table_data):
     return returncode
 
 
-# In[ ]:
+# In[14]:
 
 
 # passチェック
@@ -352,7 +352,7 @@ def pass_check(checklist_pickuped):
     return False
 
 
-# In[ ]:
+# In[15]:
 
 
 @log(logger)
@@ -365,7 +365,7 @@ def move_log(file_path: str=None) -> str:
 
 # [required]
 
-# In[ ]:
+# In[16]:
 
 
 @log(logger)
@@ -421,7 +421,7 @@ def main() -> None:
 
 # [uneditable]
 
-# In[ ]:
+# In[17]:
 
 
 if __name__ == '__main__':
@@ -432,7 +432,7 @@ if __name__ == '__main__':
 
 # [required]
 
-# In[ ]:
+# In[18]:
 
 
 ## sample ##
@@ -444,7 +444,7 @@ ait_creation_year='2023'
 
 # [uneditable] 
 
-# In[ ]:
+# In[19]:
 
 
 if not is_ait_launch:
