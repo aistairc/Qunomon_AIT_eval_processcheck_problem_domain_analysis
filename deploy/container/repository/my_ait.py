@@ -85,12 +85,13 @@ if not is_ait_launch:
 
 # #### #3-2 [required]
 
-# In[4]:
+# In[1]:
 
 
 if not is_ait_launch:
     requirements_generator.add_package('pandas','2.2.3')
-    requirements_generator.add_package('matplotlib','3.9.4')
+    requirements_generator.add_package('numpy','2.2.3')
+    requirements_generator.add_package('matplotlib','3.10.0')
 
 
 # #### #3-3 [uneditable]
@@ -161,7 +162,7 @@ if not is_ait_launch:
      manifest_genenerator.set_ait_description('機械学習品質マネジメントガイドライン第三版に従って、機械学習利用システムに用いるデータセットが問題領域分析の十分性を満たしているかをチェックリスト方式で審査する。'
                                               'チェックリストはhttps://github.com/aistairc/Qunomon_AIT_eval_processcheck_problem_domain_analysisからダウンロードできる。')
      manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_processcheck_problem_domain_analysis')
-     manifest_genenerator.set_ait_version('0.3')
+     manifest_genenerator.set_ait_version('0.4')
      manifest_genenerator.add_ait_keywords('checklist,sufficiency of problem domain')
      manifest_genenerator.set_ait_quality('https://ait-hub.pj.aist.go.jp/ait-hub/api/0.0.1/qualityDimensions/機械学習品質マネジメントガイドライン第三版/A-1問題領域分析の十分性')
      inventory_requirement_checklist = manifest_genenerator.format_ait_inventory_requirement(format_=['csv'])
